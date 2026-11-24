@@ -1,0 +1,15 @@
+node_modules
+dist
+.vercel
+.DS_Store
+*.local
+.env*
+!.env.example
+
+# working files, not part of the site
+fontes
+shots
+.taste-skill
+.impeccable
+.playwright-cli
+Notes_*.pdf
