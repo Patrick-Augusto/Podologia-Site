@@ -107,7 +107,7 @@ function Hero({ agendar }: { agendar: (p: Preset) => void }) {
               <span className="urg-dot" aria-hidden="true" />
               <span>Unha encravada doendo? <span className="urg-l">Ver o primeiro horário livre →</span></span>
             </a>
-            <h1 className="r2">Podóloga no Centro de <em>Tietê</em></h1>
+            <h1 className="r2"><span className="eyebrow hero-kicker">Podóloga no Centro de Tietê</span>Devolvendo saúde e autoestima para os <em>seus pés</em></h1>
             <p className="lead r3" style={{ marginTop: 24 }}>Tratamento de unha encravada, micose, fissuras e calos, com atenção individual e explicação de cada etapa. Também atendo em casa idosos e pessoas acamadas.</p>
             <div className="r4" style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 34 }}>
               <a className="btn btn-p" href="#agendar">Agendar horário <Arrow /></a>
@@ -371,7 +371,8 @@ function Duvidas() {
                 {f.q}
                 <span className="fq-x" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
               </button>
-              {open === n && <p className="fq-a" id={`fq-${n}`}>{f.a}</p>}
+              {/* every answer is in the HTML (search engines and AI read it); closed ones are hidden */}
+              <p className="fq-a" id={`fq-${n}`} hidden={open !== n}>{f.a}</p>
             </div>
           ))}
         </div>

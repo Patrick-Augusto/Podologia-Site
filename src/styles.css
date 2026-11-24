@@ -55,7 +55,8 @@ a{color:#7d4f47}a:hover{color:#5c3832}
 @keyframes pulse{from{transform:scale(.6);opacity:.5}to{transform:scale(1.5);opacity:0}}
 .urg-l{color:var(--ink);font-weight:500;border-bottom:1px solid #cdb7a8;padding-bottom:2px;transition:border-color .2s,color .2s}
 .urg:hover .urg-l{color:var(--mauve);border-color:var(--mauve)}
-.hero h1{font-size:clamp(46px,6.4vw,88px);line-height:.98;margin-top:22px}
+.hero h1{font-size:clamp(42px,5.4vw,76px);line-height:1;margin-top:22px;text-wrap:balance}
+.hero-kicker{display:block;font-family:'Hanken Grotesk',sans-serif;letter-spacing:.14em;line-height:1.4;margin-bottom:18px}
 .hero h1 em{font-style:italic;color:var(--mauve)}
 .hero-pic{position:relative;border-radius:28px 28px 28px 160px;overflow:hidden;aspect-ratio:4/3.7;box-shadow:0 40px 80px -40px rgba(54,35,31,.45)}
 .hero-pic img{object-position:38% 30%}
@@ -335,3 +336,4 @@ a{color:#7d4f47}a:hover{color:#5c3832}
 }
 .ag-ans::first-letter,.sum dd::first-letter{text-transform:uppercase}
 .ag-ht h3{line-height:1.2}
+.nav-link{white-space:nowrap}
